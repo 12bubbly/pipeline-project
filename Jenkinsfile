@@ -9,7 +9,7 @@ sh 'ant -f build.xml -v'
 }
 post {
 always {
-archiveArtifacts Artifacts: 'dist/*.jar', fingerprint: true
+archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 }
 }
 }
